@@ -7,7 +7,7 @@
 
 #Script name: check_disk_usage.sh
 
-#prurpose: monitor disk usage and alert if the usage exceeds threshold
+#purpose: monitor disk usage and alert if the usage exceeds threshold
 
 #Author: Trivedi
 
