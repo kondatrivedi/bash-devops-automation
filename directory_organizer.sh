@@ -21,12 +21,16 @@ cd "$TARGET_DIR"
 
 #loop through the files
 for FILE in *; do
+#check if it's a regular file
 	if [ -f "$FILE" ]
 	then
+	    #extract extension
 		EXTENSION="${FILE##*.}"
 
+		#create folder
 		mkdir -p "$EXTENSION"
 
+		#move fileto corresponding extension
 		mv "$FILE" "$EXTENSION/"
 
 		echo "Moved $FILE to $EXTENSION/"
